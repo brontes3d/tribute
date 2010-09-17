@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  commit: 58b318695126f99742986c3592a2129fcd956be0
+  branch: master
+lock: false
+repository_class: Piston::Git::Repository
+repository_url: git://github.com/josevalim/inherited_resources.git

@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  commit: 68360bcc55e00c94aff077c8115c1dd30342550f
+  branch: master
+lock: false
+repository_class: Piston::Git::Repository
+repository_url: git://github.com/brontes3d/resourceful_views.git

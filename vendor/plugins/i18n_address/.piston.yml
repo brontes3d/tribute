@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  commit: 35fbf822ab21d5390481c4dba70157c208e7780c
+  branch: master
+lock: false
+repository_class: Piston::Git::Repository
+repository_url: git://github.com/brontes3d/i18n_address.git

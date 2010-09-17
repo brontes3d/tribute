@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'daemons'
+require 'fileutils'
+APP_ROOT = File.expand_path(File.dirname(__FILE__) + '/..')
+script_file = File.join(File.expand_path(APP_ROOT),'script','amqp_listener.rb')
+tmp_dir = File.join(File.expand_path(APP_ROOT), 'tmp')
+
+options = {
+  :app_name   => "tribute_amqp_listener",
+  :dir_mode   => :normal,
+  :dir        => tmp_dir,
+  :multiple   => true,
+  :ontop      => false,
+  :mode       => :load,
+  :backtrace  => true,
+  :monitor    => false,
+  :log_output => true
+}
+
+PUTS_AMQP_LOGGING = (ARGV[0] == "run")
+
+Daemons.run(script_file,options)

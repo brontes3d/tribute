@@ -1,0 +1,12 @@
+Listing <%=resource_collection_name%>
+
+<br/><br/>
+
+<% collection.each do |r| %>
+	
+	<%=link_to r.name, url_for(:action => 'show', :id => r)%><br/>
+	
+<% end %>
+
+<br/>
+<%=link_to "new #{resource_instance_name}", url_for(:action => 'new')%>

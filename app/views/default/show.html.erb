@@ -1,0 +1,6 @@
+
+<%=link_to "back to list", url_for(:action => 'index')%>
+<br/><br/>
+<%=link_to "edit", url_for( :action => 'edit', :id => resource )%>
+<br/><br/>
+<%=link_to "destroy", url_for(:action => 'destroy', :id => resource), :confirm => "Are you sure?", :method => :delete%>

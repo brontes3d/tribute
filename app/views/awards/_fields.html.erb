@@ -1,0 +1,35 @@
+<% @billed_actor ||= @award.billed_actor %>
+
+<% if @edit %>
+	<p><b><%=GrantedAward.han('billed_actor_id')%>:</b><br/><%=@award.billed_actor.name%></p>
+	<p><b><%=GrantedAward.han('rule_definition_id')%>:</b><br/><%=@award.rule_definition.name%></p>
+<% else %>
+	<p><b><%=GrantedAward.han('billed_actor_id')%>:</b><br/>
+	<%=@billed_actor.name%>
+	<%=hidden_field(:award, :billed_actor_id, :value => @billed_actor.id)%></p>
+
+	<p><b><%=GrantedAward.han('rule_definition_id')%>:</b><br/>
+	<%=select(:award, :rule_definition_id, options_for_rule_selection(GrantedAward), { :include_blank => true })%></p>
+<% end %>
+
+<p><b><%=GrantedAward.han('quantity_awarded')%>:</b><br/>
+<%=text_field :award, :quantity_awarded %></p>
+
+<p><b><%=GrantedAward.han('quantity_used')%>:</b><br/>
+<%= @award.used_awards.count %></p>
+
+
+<% Time.use_zone("Eastern Time (US & Canada)") do %>
+
+	<p><b><%=GrantedAward.han('start_date')%>:</b><br/>
+	<%=date_select :award, :start_date, :discard_day => true %> (First day of Month)</p>
+
+	<p><b><%=GrantedAward.han('end_date')%>:</b><br/>
+	<%=date_select :award, :end_date, :discard_day => true %> (Last day of Month)</p>
+
+<% end %>
+
+<p><b><%=GrantedAward.han('notes')%>:</b><br/>
+<%=text_area :award, :notes, :rows => 10 %></p>
+
+<br/>

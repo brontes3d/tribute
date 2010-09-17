@@ -1,0 +1,6 @@
+<% for column in resource_class.content_columns %>
+
+<p><b><%= column.human_name %>:</b> 
+<%= text_field(resource_instance_name, column.name) %></p>
+
+<% end %>

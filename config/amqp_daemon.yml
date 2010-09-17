@@ -1,0 +1,12 @@
+# rabbitmqctl add_user tribute_dev tribute_dev
+# rabbitmqctl set_permissions tribute_dev ".*" ".*" ".*"
+
+development:
+  host: localhost
+  user: guest
+  pass: guest
+  # logging: true    
+  #warning "logging: true" is extremely verbose, not a good setting for production.
+
+test:
+  host: localhost

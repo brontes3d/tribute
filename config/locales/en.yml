@@ -1,0 +1,152 @@
+--- 
+en:
+  country_code:
+    at: "Austria"
+    be: "Belgium"
+    ca: "Canada"
+    ch: "Switzerland"
+    de: "Germany"
+    es: "Spain"
+    fr: "France"
+    gb: "United Kingdom"
+    il: "Israel"
+    it: "Italy"
+    nl: "Netherlands"
+    se: "Sweden"
+    us: "United States"
+  activerecord: 
+    attributes: 
+      account:
+        actor_number: Billing Account Number
+        archived: Archived
+        associated_account_kind: Associated Account Type
+        associated_account_number: Associated Account Number
+        channel_partner_name: Channel Partner
+        date_of_first_case_upload: First Case Uploaded on
+        name: Name
+        non_billable: Non-Billable
+      awarded_promotion: 
+        billed_actor_id: "Grant To"
+        rule_definition_id: "Using Rule"
+      granted_award: 
+        billed_actor_id: "Grant To"
+        rule_definition_id: "Using Rule"
+        quantity_awarded: "Quantity"
+        quantity_used: "Used"
+        start_date: "Start"
+        end_date: "End"
+        notes: "Notes (Reason Awarded)"
+      invoice:
+        current_as_of: Current as of
+        billed_actor: Bill To
+        billing_cycle: Billing Cycle
+        invoice_number: Invoice Number
+        orders_count: Number of Orders
+        payed_actor: Pay To
+      billing_cycle:
+        name: Date Range
+        state: State
+  date: 
+    abbr_day_names: 
+      - Sun
+      - Mon
+      - Tue
+      - Wed
+      - Thu
+      - Fri
+      - Sat
+    abbr_month_names: 
+      - ~
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
+    day_names: 
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
+    first_day_of_week: 0
+    formats: 
+      all_numerics: "%m/%d/%Y"
+      default: "%e %b %Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names: 
+      - ~
+      - January
+      - February
+      - March
+      - April
+      - May
+      - June
+      - July
+      - August
+      - September
+      - October
+      - November
+      - December
+    order: 
+      - !ruby/symbol year
+      - !ruby/symbol month
+      - !ruby/symbol day
+    short_day_names: 
+      - Su
+      - Mo
+      - Tu
+      - We
+      - Th
+      - Fr
+      - Sa
+  invoices:
+    ordered:
+      header: Ordered
+    billed:
+      header: Billed
+    rules:
+      header: Rules
+    all_invoices_listing: 
+      header: Invoices Listing
+    listing:
+      submit_button:
+        text: View invoices
+  ? "no"
+  : "No"
+  products:
+    case:
+      sku_names:
+        lava_cos_tier_1_case_fees: Tier 1 Case Fees
+        lava_cos_tier_2_case_fees: Tier 2 Case Fees
+        lava_cos_tier_3_case_fees: Tier 3 Case Fees
+        lava_cos_tier_4_case_fees: Tier 4 Case Fees
+        lava_cos_tier_5_case_fees: Tier 5 Case Fees
+        lava_cos_additional_units: Additional Units
+        lava_cos_additional_scans: Additional Scans
+        lava_cos_free_case_fees: Free Case Fees
+        service_fees: Service Fees
+        free_service_fees: Free Service Fees
+    quantity: "qty:"
+  time: 
+    am: am
+    formats: 
+      date_at_time_with_zone: "%m/%d/%Y at %l:%M %p %Z"
+      day_at_time_with_zone: "%a %b %d, %Y at %l:%M %p %Z"
+      # default: "%b %d, %Y %l:%M %p %Z"
+      default: "%e %b %Y %l:%M%p %Z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm
+  ? "yes"
+  : "Yes"
+  

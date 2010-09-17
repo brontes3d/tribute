@@ -1,0 +1,6 @@
+reporting billing system based on monthly invoicing with a rules engine for discounts and promotions
+
+
+Copyright (c) 2008-2010 3M. All rights reserved. Released under the MIT license.
+
+Authored by Jacob Burkhart, Rajiv Aaron Manglani, George Ardeleanu, and Joshua Lane.

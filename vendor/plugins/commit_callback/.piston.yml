@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  commit: 78e7ae10db41298d6317981bde926c8576a19c4b
+  branch: master
+lock: false
+repository_class: Piston::Git::Repository
+repository_url: git://github.com/brontes3d/commit_callback.git

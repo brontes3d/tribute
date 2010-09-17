@@ -1,0 +1,18 @@
+Editing a <%=resource.class.name%>
+
+<%=error_messages_for resource_instance_name %>
+
+<% form_for resource_instance_name, resource, :url => { :action => "update" }, :html => { :method => :put } do |f| %>
+	
+	<%=get_content_for_object('fields', f)%>
+	
+	<br/>
+	
+	<%= submit_tag 'Save' %>
+	<% if resource.respond_to?(:get_redirect_to_url) %>
+		<%= link_to "cancel", resource.get_redirect_to_url(self) %>
+	<% else %>
+		<%= link_to "cancel", url_for(:action => 'show', :id => resource)%>
+	<% end %>
+	
+<% end %>

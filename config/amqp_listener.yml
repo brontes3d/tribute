@@ -1,0 +1,20 @@
+# rabbitmqctl add_user tribute_dev tribute_dev
+# rabbitmqctl set_permissions tribute_dev ".*" ".*" ".*"
+
+development:
+  host: localhost
+  user: guest
+  pass: guest
+  #vhost
+  #timeout
+  # logging: true
+  # fallback_servers:
+  #   - host: george
+  #     port: 2382
+  #   - host: rajiv
+  #   - host: jacob
+    
+  #warning "logging: true" is extremely verbose, not a good setting for production.
+
+test:
+  host: localhost

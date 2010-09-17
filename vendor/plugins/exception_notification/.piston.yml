@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  commit: 1323db0003ab29c8a307143f08b802a7c595d865
+  branch: master
+lock: false
+repository_class: Piston::Git::Repository
+repository_url: git://github.com/brontes3d/exception_notification.git

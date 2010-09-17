@@ -1,0 +1,714 @@
+/***
+ BEGIN : YUI overrides
+***/
+body { 
+	text-align: left;
+	width: auto;
+	font-family: helvetica,arial,clean,sans-serif;
+/*	font-family: "Lucida Grande",Geneva,Arial,Verdana,sans-serif;*/
+/*	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;*/
+}
+div#doc3 { margin: 0; }
+
+select, input, button, textarea, button {
+/*	font-family: "Lucida Grande",Geneva,Arial,Verdana,sans-serif;*/
+/*	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;*/
+}
+
+.yui-skin-sam .yui-dt table {
+/*	font-family: "Lucida Grande",Geneva,Arial,Verdana,sans-serif;*/
+/*	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;*/
+}
+input {
+	overflow: visible;
+}
+input[type="submit"], input[type="button"] {
+	padding: 0px 5px;
+}
+
+h1 {
+	font-size: 153.9%;
+	margin: 0.75em 0 0.75em 0;
+}
+h2 {
+	font-size: 116%;
+	margin: 0.25em 0 0.25em 0;
+}
+h3 {
+	font-size: 108%;
+	margin: 0.25em 0 0.25em 0;
+}
+/*** END : YUI overrides ***/
+
+
+.fieldWithErrors{
+  padding: 2px;
+  border: 1px solid #f00;
+}
+
+div#loading {
+	padding: 0px 0px 2px 0px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #bbb;
+
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	width: 60px;
+	margin: 0px auto 0px -30px; /* NOTE : the left margin here needs to be half the width for it to be centered */
+	text-align: left;
+	background-image: url('../images/loading_spinner.gif');
+	background-repeat: no-repeat;
+	background-position: 4px 2px;
+	padding: 4px 0px 4px 26px;
+}
+
+#logo_and_role {
+	margin: 10px 10px;
+}
+#logo_and_text {
+	font-weight: bold;
+	color: #97999B;
+}
+
+#role_change {
+	float: right;
+	margin-top: 10px;
+}
+
+#case_manager_text_and_logo {
+	font-weight: bold;
+	color: #97999B;
+	
+	vertical-align: middle;
+}
+#case_manager {
+	border-left: 1px solid #BEC0C2;
+	padding-left: 0.4em;
+	
+	font-weight: bold;
+	color: #97999B;
+}
+
+
+/***
+ BEGIN : Navigation Bar
+***/
+#main_menu_container {
+	clear: both;
+}
+.solidblockmenu ul{
+	float: left;
+	/*font: bold 13px arial,helvetica,clean,sans-serif;*/
+	width: 100%;
+	background: black url(../images/nav-bg.png) center center repeat-x;
+	list-style: none;
+}
+.solidblockmenu li{
+	float: left;
+	list-style: none;
+}
+.solidblockmenu li a{
+	font-size: 13px;
+	font-family: arial,helvetica,clean,sans-serif;
+/*	font-family: "Lucida Grande",Geneva,Arial,Verdana,sans-serif;*/
+/*	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;*/
+	float: left;
+	color: white;
+	padding: 4px 9px;
+	text-decoration: none;
+}
+.solidblockmenu li a:visited{
+	color: white;
+}
+.solidblockmenu li a:hover, .solidblockmenu li a.current{
+	color: white;
+	background: transparent url(../images/nav-active.png) center center repeat-x;
+}
+.solidblockmenu li#logged_in_info{
+	float: right;
+	background: transparent;
+}
+.solidblockmenu li#logged_in_info a{
+	background: transparent;
+	font-weight: normal;
+	font-size: 11px;
+	text-decoration: underline
+}
+.solidblockmenu li span {
+	color: #fff;
+	font-size: 12px;
+	padding: 4px 2px;
+	float: left;
+	overflow: hidden;
+}
+.solidblockmenu li span.spacer{
+	width: 4px;
+}
+.solidblockmenu li span.logged_in_username {
+	padding: 4px 9px;
+}
+.solidblockmenu li span.dotted_line{
+	border-left: 1px dotted #a9a9a9;
+	width: 1px;
+	font-size: 13px;
+/*	padding: 9px 0px;*/
+	padding: 3px 0px;
+}
+#logout_link {
+/*	padding: 9px 11px 9px 10px;*/
+/*	padding: 4px 6px 4px 5px;*/
+	padding: inherit 6px inherit 5px;
+}
+
+/***
+ END : Navigation Bar
+***/
+
+
+.clear {
+	clear: both;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+#content {
+	margin: 10px;
+}
+
+#footer {
+	clear: both;
+	padding: 10px;
+	color: #888;
+	border-top: 1px #888 solid;
+}
+
+.common_flash_properties {
+	padding: 5px 10px;
+/*	margin-bottom: 10px;*/
+}
+#flash_notice {
+/*	color: green;*/
+	color: #0E7E06;
+	background-color: #E8FEE6;
+	border-bottom: 1px solid #808080;
+}
+#flash_error {
+/*	color: red;*/
+	color: #FA1C00;
+	background-color: #FED2CC;
+	border-bottom: 1px solid #808080;
+}
+
+.noscript {
+	color: #FA1C00;
+	background-color: #FED2CC;
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	padding-left: 10px;
+}
+
+
+iframe {
+	display: none;
+}
+
+
+.treeViewSelected {
+  background: #9af;
+}
+
+
+
+.in_place_field {
+  border: 1px dotted #AAAAAA;
+  padding: 3px;
+  width: 200px;
+}
+
+.tab_buttons {
+  margin-bottom: 8px;
+}
+.tab_button {
+  border: 1px solid #999;
+  padding: 4px;
+	display: inline-block;
+}
+.selected {
+  background: #ffa;
+}
+
+
+/***
+ BEGIN : Case Detail File tab (mostly)
+***/
+.files h2 {
+	font-size: 15px;
+	clear: both;
+}
+table th {
+  font-weight: bold;
+}
+table.files_table {
+  border-collapse: collapse;
+}
+table.files_table th {
+  padding: 4px;
+}
+table.files_table td {
+  padding: 4px;
+}
+table.files_table .odd {
+  background: #ddd;
+}
+
+
+
+/***
+ BEGIN : Missing Translation Styles
+***/
+.translation_missing {
+	color: red;
+}
+
+
+
+/***
+ BEGIN : SearchAndEditBase Interface
+***/
+#search_constrains {
+/*	vertical-align: middle;*/
+}
+#search_constrains * {
+	vertical-align: middle;
+}
+/* In Particular for the Lab editor interface */
+#details_panel h4 {
+	margin-top: 25px;
+}
+#details_panel p {
+	margin-top: 0.8em;
+}
+#details_panel b {
+	color: #222;
+}
+
+
+
+/***
+ BEGIN : Generic row stripping for non-YUI tables
+***/
+.odd {
+  background: #ddd;
+}
+
+
+
+/***
+ BEGIN : Generic stripped table with key-value pairs per row
+***/
+table.display_only_info {
+	margin-bottom: 15px;
+}
+table.display_only_info td {
+	padding: 0.3em 0.5em;
+}
+table.display_only_info .label {
+	color: #222;
+	font-weight: bold;
+	text-align: right;
+}
+table.display_only_info .value {
+	padding-left: 0.3em;
+}
+
+
+
+/***
+ BEGIN : Generic resource index page table style
+***/
+table.general_listing {
+/*	border-collapse: separate;
+	border-spacing: 2px;
+*/	
+}
+table.general_listing thead {
+	
+}
+table.general_listing th {
+	font-weight: bold;
+	background-color: #ddd;
+	padding: 5px;
+}
+table.general_listing td {
+  padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+
+
+
+ul.bulleted {
+}
+ul.bulleted li {
+	margin-left: 2em;
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+
+
+/***
+ BEGIN : Invoice listing styles
+***/
+#invoices_criteria {
+	margin: 1em 0;
+	text-align: center;
+}
+#invoices_criteria label, #invoices_criteria input {
+	vertical-align: top;
+}
+#invoices_criteria .select_account, #invoices_criteria .select_channel_partner {
+	padding: 0.5em;
+	width: 28em;
+	display: inline-block;
+	vertical-align: top;
+}
+#invoices_criteria .select_channel_partner {
+	border-left: 1px dashed #333;
+	padding-left: 0.8em;
+}
+#invoices_criteria .submit_invoices_criteria_container {
+	margin: 1.2em 0;
+	text-align: center;
+}
+#invoices_criteria .submit_invoices_criteria {
+/*	width: 10em;*/
+}
+#invoices_criteria .channel_partner_options, #invoices_criteria .account_options {
+	display: inline-block;
+	width: 20.25em;
+}
+#invoices_criteria .channel_partner_options select, #accounts_selector {
+	width: 20em;
+}
+#invoices_wrapper .top {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#invoices_wrapper .tall {
+	padding: 15px;
+}
+
+
+
+
+/*** Table approach ***/
+#invoices_criteria table td.select_actor {
+	width: 20px;
+}
+
+.align_right {
+	text-align: right;
+}
+
+
+
+.invoice_container {
+	clear: both;
+	margin: 10px 0px;
+}
+.invoice_container .title {
+	float: left;
+	margin-right: 10px;
+}
+.invoice_container .status_info {
+	color: #555;
+}
+.invoice_container .date_range {
+	color: #333;
+}
+.invoice_container .details {
+	float: left;
+}
+.invoice_container .details table {
+	color: #555;
+}
+
+
+
+
+
+/***
+ BEGIN : Invoice detail styles
+***/
+.order_detail {
+	width: 44em;
+}
+
+/*** Invoice Information Items (things at the top) ***/
+#invoice_contents table.display_only_info {
+	width: 44em;
+}
+
+
+/*** Invoice Ordered Items header styles ***/
+h2 span {
+	display: inline-block;
+}
+h2 .order_product_info {
+	color: #222;
+	font-weight: bold;
+}
+.order_detail h2 {
+	border-bottom: 1px dotted #333;
+}
+h2 .order_posted_date, h2 .order_product_start_date {
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	margin-top: 2px;
+}
+h2 .billable_toggle {
+	font-size: 12px;
+	margin-left: 1em;
+}
+
+
+/*** Invoice Ordered Items <ul> approach ***/
+ul.items {
+	margin-bottom: 1.5em;
+}
+ul.items li {
+/*	margin-left: 2em;
+	list-style-type: disc;
+	list-style-position: outside;
+*/
+	line-height: 1.25em;
+}
+ul.items li span {
+	display: inline-block;
+}
+ul.items li span.sku_number {
+	width: 3.25em;
+	font-size: 11px;
+}
+ul.items li span.sku_name {
+	width: 9em;
+}
+ul.items li span.quantity_label {
+	width: 1.5em;
+	font-size: 11px;
+}
+
+
+/*** Invoice Ordered Items <table> approach ***/
+table.items {
+	border-collapse: separate;
+	border-spacing: 5px;
+	margin-left: 0.5em;
+}
+table.items .bullet {
+/*	font-size: 161.6%;
+	line-height: 0.1em;
+*/
+}
+table.items .quantity_label {
+	padding-left: 1em;
+}
+
+
+
+.applied_rules {
+	margin-bottom: 3em;
+}
+.ordered_items, .billed_items, .applied_rules {
+	margin-left: 1em;
+}
+.ordered_items h3, .billed_items h3, .applied_rules h3 {
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+
+
+
+/***
+ BEGIN : Exports styles
+***/
+#export_criteria {
+	margin: 1em 0;
+	text-align: center;
+}
+
+#billing_cycle_info {
+	margin: 1em 0;
+}
+#billing_cycle_info .name {
+	font-weight: bold;
+	color: #222;
+}
+
+#export_wrapper .top {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#export_wrapper .dataTables_info {
+	width: auto;
+}
+#export_wrapper .dataTables_info a {
+	margin-left: 2em;
+}
+
+#export td.invoice_number {
+	white-space: nowrap;
+}
+
+
+
+/***
+ BEGIN : Accounts show/edit interface
+***/
+#details_panel .display_only_info {
+	margin-bottom: 0px;
+}
+#details_panel h3 .title {
+	font-weight: bold;
+	color: #222;
+	margin-right: 0.7em;
+}
+#details_panel h3 a {
+	font-size: 13px;
+}
+.sales_terms, .awards, .service_contracts {
+	margin-bottom: 1em;
+}
+.sales_terms {
+	margin-top: 1em;
+}
+.sales_terms li, .awards li, .service_contracts li {
+	margin-bottom: 0.5em;
+}
+.sales_terms table, .awards table, .service_contracts table {
+	border-collapse: separate;
+	border-spacing: 2px;
+	margin-left: 1em;
+	border-top: 1px dotted #333;
+	margin-bottom: 0.5em;
+}
+.sales_terms table.first, .awards table.first, .service_contracts table.first {
+	padding-left: 1em;
+	margin-left: 0;
+}
+.sales_terms .label, .awards .label, .service_contracts .label {
+	font-weight: bold;
+	color: #333;
+	vertical-align: top;
+	padding-right: 1em;
+	white-space: nowrap;
+}
+.sales_terms .value, .awards .value, .service_contracts .value {
+	padding-left: 1em;
+}
+.no_entries_message {
+	padding-left: 1em;
+}
+
+
+
+/***
+ BEGIN : themes/panel_browser styles
+***/
+ul.panel_items {
+	border: 1px solid #000; 
+	height: 500px; 
+	overflow: auto;
+	margin: 0.5em 0;
+}
+ul.panel_items li {
+	margin: 5px 0px;
+	padding-left: 10px;
+	white-space: nowrap;
+}
+
+.yui-g #new_link {
+	float: right;
+}
+.yui-gd #search {
+	width: 75%;
+}
+
+
+
+/***
+ BEGIN : jQuery datatables styles and overrides
+***/
+.dataTables_wrapper .paging_full_numbers span.paginate_button,
+	.dataTables_wrapper .paging_full_numbers span.paginate_active {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+
+.dataTables_wrapper .paging_full_numbers span.paginate_button {
+	background-color: transparent;
+}
+
+.dataTables_wrapper .paging_full_numbers span.first, 
+		.dataTables_wrapper .paging_full_numbers span.previous,
+		.dataTables_wrapper .paging_full_numbers span.next,
+		.dataTables_wrapper .paging_full_numbers span.last {
+	border: none;
+	padding: 3px 0px;
+}
+.dataTables_wrapper .paging_full_numbers span.first img, 
+		.dataTables_wrapper .paging_full_numbers span.previous img,
+		.dataTables_wrapper .paging_full_numbers span.next img,
+		.dataTables_wrapper .paging_full_numbers span.last img {
+	vertical-align: middle;
+}
+
+
+.dataTables_wrapper tr.odd {
+	background-color: #EEEEEE;
+}
+	
+.dataTables_wrapper table.display thead th,
+		.dataTables_wrapper table.display tfoot th {
+	color: #222;
+}
+
+.dataTables_wrapper .top {
+	margin-bottom: 1em;
+}
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+.dataTables_wrapper tr.odd td.sorting_1 {
+	background-color: #CCCCCC;
+}
+
+.dataTables_wrapper tr.odd td.sorting_2 {
+	background-color: #BFBFBF;
+}
+
+.dataTables_wrapper tr.odd td.sorting_3 {
+	background-color: #B2B2B2;
+}
+
+.dataTables_wrapper tr.even td.sorting_1 {
+	background-color: #F6F6F6;
+}
+
+.dataTables_wrapper tr.even td.sorting_2 {
+	background-color: #F0F0F0;
+}
+
+.dataTables_wrapper tr.even td.sorting_3 {
+	background-color: #EAEAEA;
+}

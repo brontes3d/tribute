@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  commit: a64aa4ce7e5365c0a62f88d995ca5646e7a84e38
+  branch: master
+lock: false
+repository_class: Piston::Git::Repository
+repository_url: git://github.com/brontes3d/amqp_listener.git
